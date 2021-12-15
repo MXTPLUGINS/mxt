@@ -1,12 +1,7 @@
 # MXT Information
 
 * Commands
-* Permissions
-* Softdepends
-
-==========Plugin===========
-
-Commands:
+* 
   /gma <others>
   /gmc <others>
   /gms <others>
@@ -24,7 +19,7 @@ Commands:
   /mxtreload
   
  
-Permissions:
+* permissions
   mxt.gma.others
   mxt.gm.others.*
   mxt.gma
