@@ -1,0 +1,44 @@
+no-permission: "&cYou don't have permission to use this command!"
+#supported placeholders: %player_name%, %gamemode%
+game-mode-set-self: "&aYour gamemode has been set to &c%gamemode%"
+game-mode-set-others-target: "&aYour gamemode has been set to &c%gamemode% &aby &c%player_name%"
+#supported placeholders: %target_name%, %gamemode%
+game-mode-set-others-player: "&aYou have set &c%target_name% &agamemode to &c%gamemode%"
+disabled-cmd-msg: "&cThe command you are trying to execute is disabled!"
+fly:
+  enabled: true
+  fly-toggle-self: "&aFly mode"
+
+discord:
+  enabled: true
+  link: '&a Join our discord server now! = &bdiscord.gg'
+
+welcome-title:
+  enabled: false
+  message: '&aWelcome To Server'
+  messagesubtitle: '&bThanks for joining %player%'
+welcome-bar:
+  enabled: false
+  message: '&awww.example.com'
+suicide:
+  enabled: true
+  broadcast-message-enabled: true
+  #supported placeholders: %player_name%
+  broadcast-msg: "&c%player_name% &aTook there own life"
+  player-message: "&aYou have killed yourself!"
+clean:
+  enabled: true
+  message: "&aYou have cleaned your inventory"
+  #supported placeholders: %player_name%
+  message-target: "&aYour inventory have been cleaned by &c%player_name%"
+  #supported placeholders: %target_name%
+  message-player: "&aYour have cleaned &c%target_name% &ainventory"
+spawn:
+  teleport-msg: "&aYou have teleported to spawn!"
+  #supported placeholders: %player_name%
+  teleport-others-msg-target: "&aYou have been teleported to spawn by &c%player_name%"
+  #supported placeholders: %target_name%
+  teleport-others-msg-player: "&aYou have teleported &c%target_name% &ato spawn"
+
+#Don't change this
+version: 1.0

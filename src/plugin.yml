@@ -1,0 +1,54 @@
+name: mxt
+version: 1.0
+author: MXT
+main: me.mxt.mxtplugin.Main
+api-version: 1.8
+softdepend: [ActionBarAPI, TitleAPI]
+commands:
+  mxt:
+    description: main command of mxt plugin
+  fly:
+    description: Toggle fly
+    usage: /<command>
+  mxtreload:
+    description: Reload the plugin
+    usage: /<command>
+  discord:
+    description: Get discord link for this server (If you're admin then edit this in "mxt > config.yml" if you already didn't edit the link)
+    usage: /<command>
+  gms:
+    description: Set your or other's gamemode to survival
+    usage: /<command> [playername]
+  gmc:
+    description: Set your or other's gamemode to creative
+    usage: /<command> [playername]
+  gma:
+    description: Set your or other's gamemode to adventure
+    usage: /<command> [playername]
+  gmsp:
+    description: Set your or other's gamemode to spectator
+    usage: /<command> [playername]
+  heal:
+    description: Set your or other's health to max
+    usage: /<command> [playername]
+  day:
+    description: Set world time to day
+    usage: /<command>
+  night:
+    description: Set world time to night
+    usage: /<command>
+  suicide:
+    description: Kill yourself in-game
+    usage: /<command>
+  clean:
+    description: Clear your inv
+    usage: /<command>
+  ping:
+    description: Pong!
+    usage: /<command>
+  setspawn:
+    description: Set spawn for your server
+    usage: /<command>
+  spawn:
+    description: Teleport you or other's to spawn
+    usage: /<command>
