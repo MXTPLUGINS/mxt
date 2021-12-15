@@ -1,5 +1,10 @@
 # MXT Information
 
+## What is MXT Plugin?
+
+MXT Plugin is a plugin that has lot of features!, Gamemodes, heal, night, day and more!, This plugin will have some bugs, If you find any bugs report at Issues, I'll try to fix it ASAP 
+ 
+
 * Commands
  
  1. /gma <others>
