@@ -1,7 +1,7 @@
 # MXT Information
 
 * Commands
-* 
+ 
   /gma <others>
   /gmc <others>
   /gms <others>
