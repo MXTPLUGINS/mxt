@@ -1,8 +1,8 @@
-# MXT
-For more information about this plugin go to {spgiot.link.get.32382}
+# MXT Information
 
-
-Hello! This plugin is been updated, there might be some bugs, Please create a Issue to report this problem, I'll try to fix the problem ASAP
+* Commands
+* Permissions
+* Softdepends
 
 ==========Plugin===========
 
@@ -30,3 +30,6 @@ Permissions:
   mxt.gma
   mxt.gm.*
   mxt.*
+
+For more information about this plugin go to {spgiot.link.get.32382}
+Hello! This plugin is been updated, there might be some bugs, Please create a Issue to report this problem, I'll try to fix the problem ASAP
