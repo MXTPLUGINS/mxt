@@ -2,26 +2,23 @@
 
 * Commands
  
- #H2 
- 
-   /gma <others>
-   /gmc <others>
-   /gms <others>
-   /gmsp <others>
-   /heal <others>
-   /night
-   /day
-   /ping
-   /setspawn
-   /spawn
-   /suicide
-   /fly <others>
-   /discord
-   /clean <others>
-   /mxtreload
+ 1. /gma <others>
+ 2. /gmc <others>
+ 3. /gms <others>
+ 4. /gmsp <others>
+ 5. /heal <others>
+ 6. /night
+ 7. /day
+ 8. /ping
+ 9. /setspawn
+ 10. /spawn
+ 11. /suicide
+ 12. /fly <others>
+ 13./discord
+ 14. /clean <others>
+ 15. /mxtreload
   
- 
-* permissions
+  permissions
    mxt.gma.others
    mxt.gm.others.*
    mxt.gma
