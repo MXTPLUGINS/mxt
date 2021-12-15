@@ -4,6 +4,8 @@
 
 MXT Plugin is a plugin that has lot of features!, Gamemodes, heal, night, day and more!, This plugin will have some bugs, If you find any bugs report at Issues, I'll try to fix it ASAP 
  
+### We Currently support Minecraft JAVA 1.8 or Above.
+
 
 * Commands
  
