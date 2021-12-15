@@ -12,6 +12,9 @@ MXT Plugin is a plugin that has lot of features!, Gamemodes, heal, night, day an
 3. Upload this plugin into plugins folder
 4. Start/restart your server
 
+## Links:
+- Website: Spigot link
+
 * Commands
  
  1. /gma <others>
