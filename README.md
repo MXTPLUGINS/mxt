@@ -2,6 +2,8 @@
 
 * Commands
  
+ #H2 
+ 
    /gma <others>
    /gmc <others>
    /gms <others>
