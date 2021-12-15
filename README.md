@@ -6,6 +6,11 @@ MXT Plugin is a plugin that has lot of features!, Gamemodes, heal, night, day an
  
 ### We Currently support Minecraft JAVA 1.8 or Above.
 
+## Setting Up
+1. Download the plugin from spgiot
+2. Make sure your server supports plugins
+3. Upload this plugin into plugins folder
+4. Start/restart your server
 
 * Commands
  
