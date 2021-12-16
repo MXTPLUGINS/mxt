@@ -42,6 +42,7 @@ public class Main extends JavaPlugin{
         getCommand("ping").setExecutor(new PingCommand());
         getCommand("spawn").setExecutor(new SpawnCommand());
         getCommand("setspawn").setExecutor(new SetSpawnCommand());
+        getCommand("flylist").setExecutor(new FlylistCommand());
 
 
         PluginManager pluginManager = Bukkit.getPluginManager();

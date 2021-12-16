@@ -52,3 +52,6 @@ commands:
   spawn:
     description: Teleport you or other's to spawn
     usage: /<command>
+  flylist:
+    description: Show the list of flying players
+    usage: /<command>

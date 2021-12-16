@@ -14,7 +14,7 @@ import static org.bukkit.Bukkit.getServer;
 
 public class FlyCommand implements CommandExecutor {
 
-    private ArrayList<Player> list_of_flying_players = new ArrayList<>();
+    public static ArrayList<Player> list_of_flying_players = new ArrayList<>();
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
@@ -37,23 +37,28 @@ public class FlyCommand implements CommandExecutor {
                         player.sendMessage(ChatColor.translateAlternateColorCodes('&', CustomConfig.get().getString("no-permission")));
                     }
                 } else if (args.length >= 1) {
-                    Player target = Bukkit.getPlayer(args[0]);
-                    if (player.hasPermission("mxt.fly.others") || player.hasPermission("mxt.*")) {
-                        if (list_of_flying_players.contains(target)) {
-                            list_of_flying_players.remove(target);
-                            target.setAllowFlight(false);
-                            target.sendMessage(ChatColor.GREEN + "Fly mode have been " + ChatColor.RED + "DISABLED" + ChatColor.GREEN + " by " + player.getName());
-                            player.sendMessage(ChatColor.GREEN + "You have " + ChatColor.RED + "DISABLED" + ChatColor.GREEN + " fly for " + ChatColor.RED + target.getName());
-                        } else if (!list_of_flying_players.contains(target)) {
-                            list_of_flying_players.add(target);
-                            target.setAllowFlight(true);
-                            target.sendMessage(ChatColor.GREEN + "Fly mode have been " + ChatColor.RED + "ENABLED" + ChatColor.GREEN + " by " + player.getName());
-                            player.sendMessage(ChatColor.GREEN + "You have " + ChatColor.RED + "ENABLED" + ChatColor.GREEN + " fly for " + ChatColor.RED + target.getName());
-                        }
+                    if (getServer().getPlayer(args[0]) != null) {
+                        Player target = Bukkit.getPlayer(args[0]);
+                        if (player.hasPermission("mxt.fly.others") || player.hasPermission("mxt.*")) {
+                            if (list_of_flying_players.contains(target)) {
+                                list_of_flying_players.remove(target);
+                                target.setAllowFlight(false);
+                                target.sendMessage(ChatColor.GREEN + "Fly mode have been " + ChatColor.RED + "DISABLED" + ChatColor.GREEN + " by " + player.getName());
+                                player.sendMessage(ChatColor.GREEN + "You have " + ChatColor.RED + "DISABLED" + ChatColor.GREEN + " fly for " + ChatColor.RED + target.getName());
+                            } else if (!list_of_flying_players.contains(target)) {
+                                list_of_flying_players.add(target);
+                                target.setAllowFlight(true);
+                                target.sendMessage(ChatColor.GREEN + "Fly mode have been " + ChatColor.RED + "ENABLED" + ChatColor.GREEN + " by " + player.getName());
+                                player.sendMessage(ChatColor.GREEN + "You have " + ChatColor.RED + "ENABLED" + ChatColor.GREEN + " fly for " + ChatColor.RED + target.getName());
+                            }
 
+                        } else {
+                            player.sendMessage(ChatColor.translateAlternateColorCodes('&', CustomConfig.get().getString("no-permission")));
+                        }
                     } else {
-                        player.sendMessage(ChatColor.translateAlternateColorCodes('&', CustomConfig.get().getString("no-permission")));
+                        player.sendMessage(ChatColor.RED + "ERROR: That player is not online!");
                     }
+
                 }
             } else if (CustomConfig.get().getBoolean("fly.enabled") == false) {
                 player.sendMessage(ChatColor.translateAlternateColorCodes('&', CustomConfig.get().getString("disabled-cmd-msg")));
