@@ -4,8 +4,8 @@
 MXT is a plugin that provide lot of features and updates!, Gamemodes, heal, night, day and more!
 
 ## What's new?
-Added /flylist command
-Fixed spamming error on console when the player is not found, and added "Player is not found" error
+1. Added /flylist command
+2. Fixed spamming error on console when the player is not found, and added "Player is not found" error
 
 ### Currently supporting Minecraft java 1.8+ 
 Not all versions are tested yet!
