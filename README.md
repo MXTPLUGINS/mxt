@@ -6,6 +6,9 @@ MXT is a plugin that provide lot of features and updates!, Gamemodes, heal, nigh
 ### Currently supporting Minecraft java 1.8+ 
 Not all versions are tested yet!
 
+### Config file
+- [Config](https://github.com/MXTPLUGINS/mxt/blob/master/src/config.yml)
+
 ## Setting Up
 1. Download plugin from spigot
 2. Make sure your server supports plugins
