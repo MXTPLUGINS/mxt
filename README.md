@@ -16,7 +16,7 @@ Not all versions are tested yet!
 4. Start/Restart the server
 
 ## Links:
-- Spgiot: link
+- [Spgiot](https://www.spigotmc.org/resources/mxt.98417/)
 
 ## Future Updates/Fixes
 - Adding moderation commands
