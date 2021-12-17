@@ -11,11 +11,11 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class Main extends JavaPlugin{
 
     public static LocationManagerSpawn lms;
-    public static Double ver = 1.0;
+    public static Double ver = 1.2;
 
     @Override
     public void onEnable() {
-        System.out.println("[MXT] Plugin Has Enabled");
+        System.out.println("\n" + "--------MXT--------\n Server: " + getServer().getVersion() + "\n" + " Plugin: " + ver + "\n" + "The plugin has enabled" + "--------MXT--------");
         lms = new LocationManagerSpawn();
 
         getConfig().options().copyDefaults();
@@ -59,7 +59,7 @@ public class Main extends JavaPlugin{
 
     @Override
     public void onDisable() {
-        System.out.println("[MXT] Plugin Has Disabled");
+        System.out.println("\n" + "--------MXT--------\n Server: " + getServer().getVersion() + "\n" + " Plugin: " + ver + "\n" + "The plugin has disabled" + "--------MXT--------");
     }
 
 }

@@ -49,6 +49,7 @@ public class CommandManager implements CommandExecutor {
                         p.sendMessage("/ping - Pong!");
                         p.sendMessage("/setspawn - Set spawn for your server");
                         p.sendMessage("/spawn - Teleport you to spawn");
+                        p.sendMessage("/flylist - Show flying players");
                         p.sendMessage(ChatColor.GREEN + "-------------------------------------");
                     } else {
                             p.sendMessage(ChatColor.translateAlternateColorCodes ('&', CustomConfig.get().getString("no-permission")));
@@ -76,6 +77,7 @@ public class CommandManager implements CommandExecutor {
                 System.out.println("/ping - Pong!");
                 System.out.println("/setspawn - Set spawn for your server");
                 System.out.println("/spawn - Teleport you to spawn");
+                System.out.println("/flylist - Show flying players");
                 System.out.println(ChatColor.GREEN + "-------------------------------------");
             }
 

@@ -6,7 +6,6 @@ game-mode-set-others-target: "&aYour gamemode has been set to &c%gamemode% &aby 
 game-mode-set-others-player: "&aYou have set &c%target_name% &agamemode to &c%gamemode%"
 disabled-cmd-msg: "&cThe command you are trying to execute is disabled!"
 fly:
-  enabled: true
   fly-toggle-self: "&aFly mode"
 
 discord:
@@ -41,4 +40,4 @@ spawn:
   teleport-others-msg-player: "&aYou have teleported &c%target_name% &ato spawn"
 
 #Don't change this
-version: 1.0
+version: 1.2
