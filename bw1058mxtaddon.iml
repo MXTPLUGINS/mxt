@@ -16,10 +16,10 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/spigot-api-1.8.8.jar!/" />
+          <root url="jar://$USER_HOME$/OneDrive/Desktop/Plugin/ActionBarAPI.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -28,7 +28,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/spigot.jar!/" />
+          <root url="jar://$USER_HOME$/OneDrive/Desktop/Plugin/TitleAPI.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -37,20 +37,13 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/TitleAPI-1.8.1.jar!/" />
+          <root url="jar://$USER_HOME$/OneDrive/Desktop/Plugin/spigot.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/ActionBarAPI-1.5.4.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
+    <orderEntry type="library" name="ActionBarAPI" level="project" />
+    <orderEntry type="library" name="TitleAPI" level="project" />
   </component>
 </module>

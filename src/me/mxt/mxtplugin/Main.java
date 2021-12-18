@@ -2,6 +2,7 @@ package me.mxt.mxtplugin;
 
 import me.mxt.mxtplugin.Listener.LocationManagerSpawn;
 import me.mxt.mxtplugin.commands.*;
+import me.mxt.mxtplugin.events.ClickEvent;
 import me.mxt.mxtplugin.events.JoinEvent;
 import me.mxt.mxtplugin.files.CustomConfig;
 import org.bukkit.Bukkit;
@@ -11,11 +12,11 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class Main extends JavaPlugin{
 
     public static LocationManagerSpawn lms;
-    public static Double ver = 1.2;
+    public static Double ver = 1.3;
 
     @Override
     public void onEnable() {
-        System.out.println("\n" + "--------MXT--------\n Server: " + getServer().getVersion() + "\n" + " Plugin: " + ver + "\n" + "The plugin has enabled" + "--------MXT--------");
+        System.out.println("\n" + "--------MXT--------\n Server: " + getServer().getVersion() + "\n" + " Plugin: " + ver + "\n" + "The plugin has enabled" + "\n" + "--------MXT--------");
         lms = new LocationManagerSpawn();
 
         getConfig().options().copyDefaults();
@@ -43,6 +44,9 @@ public class Main extends JavaPlugin{
         getCommand("spawn").setExecutor(new SpawnCommand());
         getCommand("setspawn").setExecutor(new SetSpawnCommand());
         getCommand("flylist").setExecutor(new FlylistCommand());
+        getCommand("kickall").setExecutor(new KickallCommand());
+        getServer().getPluginManager().registerEvents(new ClickEvent(), this);
+        getCommand("safe").setExecutor(new SafeCommand());
 
 
         PluginManager pluginManager = Bukkit.getPluginManager();
@@ -59,7 +63,7 @@ public class Main extends JavaPlugin{
 
     @Override
     public void onDisable() {
-        System.out.println("\n" + "--------MXT--------\n Server: " + getServer().getVersion() + "\n" + " Plugin: " + ver + "\n" + "The plugin has disabled" + "--------MXT--------");
+        System.out.println("\n" + "--------MXT--------\n Server: " + getServer().getVersion() + "\n" + " Plugin: " + ver + "\n" + "The plugin has disabled" + "\n" + "--------MXT--------");
     }
 
 }

@@ -8,6 +8,14 @@ disabled-cmd-msg: "&cThe command you are trying to execute is disabled!"
 fly:
   fly-toggle-self: "&aFly mode"
 
+kickall:
+  enabled: true
+  kick-msg: "&cYou have been kicked from the server!"
+
+safe:
+  execute-cmd-enabled: true
+  kick-msg: "&cThe server is in maintenance/safe mode"
+
 discord:
   enabled: true
   link: '&a Join our discord server now! = &bdiscord.gg'
@@ -40,4 +48,4 @@ spawn:
   teleport-others-msg-player: "&aYou have teleported &c%target_name% &ato spawn"
 
 #Don't change this
-version: 1.2
+version: 1.3

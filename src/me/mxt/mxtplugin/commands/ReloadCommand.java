@@ -22,7 +22,7 @@ public class ReloadCommand implements CommandExecutor {
             if (player.hasPermission("mxt.reload") || player.hasPermission("mxt.*")) {
                 CustomConfig.reload();
                 player.sendMessage(ChatColor.GREEN + "Config Reloaded! Check console to see if there is any error");
-                if (!(CustomConfig.get().getDouble("version") == 1.0)){
+                if (!(CustomConfig.get().getDouble("version") == ver)){
                     player.sendMessage(ChatColor.RED + "Your config.yml is not up to date, delete the config and let it make it self or set your config version to " + ver + " to stop this warning");
                 }
             } else {
