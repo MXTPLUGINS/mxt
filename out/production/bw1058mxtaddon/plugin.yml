@@ -55,3 +55,9 @@ commands:
   flylist:
     description: Show the list of flying players
     usage: /<command>
+  kickall:
+    description: Kick everyone
+    usage: /<command>
+  safe:
+    description: Turn on safe/maintenance mode
+    usage: /<command>
