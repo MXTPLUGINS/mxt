@@ -8,6 +8,14 @@ disabled-cmd-msg: "&cThe command you are trying to execute is disabled!"
 fly:
   fly-toggle-self: "&aFly mode"
 
+afk:
+  enabled: true
+  #supported placeholders: %player%
+  afk-msg: '&c%player% &e is now afk'
+  #supported placeholders: %target% and %player%
+  afk-others-msg: '&c%target% &e is set to afk by &c%player%'
+  afk-others: true
+
 kickall:
   enabled: true
   kick-msg: "&cYou have been kicked from the server!"
@@ -48,4 +56,4 @@ spawn:
   teleport-others-msg-player: "&aYou have teleported &c%target_name% &ato spawn"
 
 #Don't change this
-version: 1.3
+version: 1.4

@@ -4,6 +4,7 @@ import me.mxt.mxtplugin.Listener.LocationManagerSpawn;
 import me.mxt.mxtplugin.commands.*;
 import me.mxt.mxtplugin.events.ClickEvent;
 import me.mxt.mxtplugin.events.JoinEvent;
+import me.mxt.mxtplugin.events.onPlayerMove;
 import me.mxt.mxtplugin.files.CustomConfig;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
@@ -12,7 +13,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class Main extends JavaPlugin{
 
     public static LocationManagerSpawn lms;
-    public static Double ver = 1.3;
+    public static Double ver = 1.4;
 
     @Override
     public void onEnable() {
@@ -47,6 +48,8 @@ public class Main extends JavaPlugin{
         getCommand("kickall").setExecutor(new KickallCommand());
         getServer().getPluginManager().registerEvents(new ClickEvent(), this);
         getCommand("safe").setExecutor(new SafeCommand());
+        getCommand("afk").setExecutor(new AfkCommand());
+        getServer().getPluginManager().registerEvents(new onPlayerMove(), this);
 
 
         PluginManager pluginManager = Bukkit.getPluginManager();

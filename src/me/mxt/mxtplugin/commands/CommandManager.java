@@ -52,6 +52,7 @@ public class CommandManager implements CommandExecutor {
                         p.sendMessage("/flylist - Show flying players");
                         p.sendMessage("/kickall - Kick everyone");
                         p.sendMessage("/safe - Turn on maintenance/safe mode");
+                        p.sendMessage("/afk - Set someone or yourself to afk mode");
                         p.sendMessage(ChatColor.GREEN + "-------------------------------------");
                     } else {
                             p.sendMessage(ChatColor.translateAlternateColorCodes ('&', CustomConfig.get().getString("no-permission")));
@@ -82,6 +83,7 @@ public class CommandManager implements CommandExecutor {
                 System.out.println("/flylist - Show flying players");
                 System.out.println("/kickall - Kick everyone");
                 System.out.println("/safe - Turn on maintenance/safe mode");
+                System.out.println("/afk - Set someone or yourself to afk mode");
                 System.out.println(ChatColor.GREEN + "-------------------------------------");
             }
 
