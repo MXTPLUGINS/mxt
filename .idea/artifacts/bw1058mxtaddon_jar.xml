@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="bw1058mxtaddon:jar">
-    <output-path>$USER_HOME$/OneDrive/Desktop/server/plugins</output-path>
-    <root id="archive" name="bw1058mxtaddon.jar">
-      <element id="module-output" name="bw1058mxtaddon" />
-    </root>
-  </artifact>
-</component>
