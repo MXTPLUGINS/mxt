@@ -30,7 +30,7 @@ public class SafeCommand implements CommandExecutor {
                     player.sendMessage(ChatColor.translateAlternateColorCodes('&', CustomConfig.get().getString("no-permission")));
                 }
             } else if (CustomConfig.get().getBoolean("safe.execute-cmd-enabled") == false){
-                player.sendMessage("Unknown command. Type \"/help\" for help.");
+                player.sendMessage((ChatColor.translateAlternateColorCodes('&', CustomConfig.get().getString("disabled-cmd-msg"))));
             }
 
         } else if(!(sender instanceof Player)){
@@ -46,7 +46,7 @@ public class SafeCommand implements CommandExecutor {
                 }
                 System.out.println("You've set the server to maintenance/safe mode, do /whitelist off, to turn this mode off");
             } else if (CustomConfig.get().getBoolean("safe.execute-cmd.enabled") ==  false){
-                System.out.println("Unknown command. Type \"/help\" for help.");
+                System.out.println(ChatColor.translateAlternateColorCodes('&', CustomConfig.get().getString("disabled-cmd-msg")));
             }
 
         }

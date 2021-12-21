@@ -26,11 +26,11 @@ public class FlyCommand implements CommandExecutor {
                         if (list_of_flying_players.contains(player)) {
                             list_of_flying_players.remove(player);
                             player.setAllowFlight(false);
-                            player.sendMessage(ChatColor.translateAlternateColorCodes('&', CustomConfig.get().getString("fly.fly-toggle-self")) + ChatColor.RED + " DISABLED");
+                            player.sendMessage(ChatColor.translateAlternateColorCodes('&', CustomConfig.get().getString("fly.fly-disable-msg")));
                         } else if (!list_of_flying_players.contains(player)) {
                             list_of_flying_players.add(player);
                             player.setAllowFlight(true);
-                            player.sendMessage(ChatColor.translateAlternateColorCodes('&', CustomConfig.get().getString("fly.fly-toggle-self")) + ChatColor.RED + " ENABLED");
+                            player.sendMessage(ChatColor.translateAlternateColorCodes('&', CustomConfig.get().getString("fly.fly-enable-msg")));
                         }
 
                     } else {
@@ -43,13 +43,13 @@ public class FlyCommand implements CommandExecutor {
                             if (list_of_flying_players.contains(target)) {
                                 list_of_flying_players.remove(target);
                                 target.setAllowFlight(false);
-                                target.sendMessage(ChatColor.GREEN + "Fly mode have been " + ChatColor.RED + "DISABLED" + ChatColor.GREEN + " by " + player.getName());
-                                player.sendMessage(ChatColor.GREEN + "You have " + ChatColor.RED + "DISABLED" + ChatColor.GREEN + " fly for " + ChatColor.RED + target.getName());
+                                target.sendMessage(ChatColor.translateAlternateColorCodes('&', CustomConfig.get().getString("fly.fly-others-msg-target-disable").replaceAll("%player%", player.getDisplayName())));
+                                player.sendMessage(ChatColor.translateAlternateColorCodes('&', CustomConfig.get().getString("fly.fly-others-msg-player-disable").replaceAll("%target%", target.getDisplayName())));
                             } else if (!list_of_flying_players.contains(target)) {
                                 list_of_flying_players.add(target);
                                 target.setAllowFlight(true);
-                                target.sendMessage(ChatColor.GREEN + "Fly mode have been " + ChatColor.RED + "ENABLED" + ChatColor.GREEN + " by " + player.getName());
-                                player.sendMessage(ChatColor.GREEN + "You have " + ChatColor.RED + "ENABLED" + ChatColor.GREEN + " fly for " + ChatColor.RED + target.getName());
+                                target.sendMessage(ChatColor.translateAlternateColorCodes('&', CustomConfig.get().getString("fly.fly-others-msg-target-enable").replaceAll("%player%", player.getDisplayName())));
+                                player.sendMessage(ChatColor.translateAlternateColorCodes('&', CustomConfig.get().getString("fly.fly-others-msg-player-enable").replaceAll("%target%", target.getDisplayName())));
                             }
 
                         } else {

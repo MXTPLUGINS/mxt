@@ -42,7 +42,7 @@ public class KickallCommand implements CommandExecutor {
                     player.sendMessage(ChatColor.translateAlternateColorCodes('&', CustomConfig.get().getString("no-permission")));
                 }
             } else if (CustomConfig.get().getBoolean("kickall.enabled") == false){
-                player.sendMessage("Unknown command. Type \"/help\" for help.");
+                player.sendMessage(ChatColor.translateAlternateColorCodes('&', CustomConfig.get().getString("disabled-cmd-msg")));
             }
         } else if (!(sender instanceof Player)){
             if (CustomConfig.get().getBoolean("kickall.enabled") == true) {
@@ -55,7 +55,7 @@ public class KickallCommand implements CommandExecutor {
             }
 
             } else if (CustomConfig.get().getBoolean("kickall.enabled") == false){
-                System.out.println("Unknown command. Type \"/help\" for help.");
+                System.out.println(ChatColor.translateAlternateColorCodes('&', CustomConfig.get().getString("disabled-cmd-msg")));
             }
         }
 

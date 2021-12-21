@@ -1,20 +1,20 @@
-no-permission: "&cYou don't have permission to use this command!"
+no-permission: "&c&lYou don't have permission to use this command!"
 #supported placeholders: %player_name%, %gamemode%
-game-mode-set-self: "&aYour gamemode has been set to &c%gamemode%"
-game-mode-set-others-target: "&aYour gamemode has been set to &c%gamemode% &aby &c%player_name%"
+game-mode-set-self: "&aYour gamemode is now &e%gamemode%"
+game-mode-set-others-target: "&aYour gamemode is set to &e%gamemode% &aby &e%player_name%"
 #supported placeholders: %target_name%, %gamemode%
-game-mode-set-others-player: "&aYou have set &c%target_name% &agamemode to &c%gamemode%"
-disabled-cmd-msg: "&cThe command you are trying to execute is disabled!"
+game-mode-set-others-player: "&aYou have set &e%target_name% &agamemode to &e%gamemode%"
+disabled-cmd-msg: "&c&lThe command you are trying to execute is disabled!"
 fly:
-  fly-toggle-self: "&aFly mode"
-
-afk:
   enabled: true
+  fly-enable-msg: "&aFly mode is now &eENABLED"
+  fly-disable-msg: "&aFly mode is now &eDISABLED"
+  #supported placeholders: %target%
+  fly-others-msg-player-disable: "&aYou have &eDISABLED &e%target% &afly"
+  fly-others-msg-player-enable: "&aYou have &eENABLED &e%target% &afly"
   #supported placeholders: %player%
-  afk-msg: '&c%player% &e is now afk'
-  #supported placeholders: %target% and %player%
-  afk-others-msg: '&c%target% &e is set to afk by &c%player%'
-  afk-others: true
+  fly-others-msg-target-enable: "&aYour fly is &eENABLED &aby &e%player%"
+  fly-others-msg-target-disable: "&aYour fly is &eDISABLED &aby &e%player%"
 
 kickall:
   enabled: true
@@ -42,7 +42,6 @@ suicide:
   broadcast-msg: "&c%player_name% &aTook there own life"
   player-message: "&aYou have killed yourself!"
 clean:
-  enabled: true
   message: "&aYou have cleaned your inventory"
   #supported placeholders: %player_name%
   message-target: "&aYour inventory have been cleaned by &c%player_name%"
@@ -56,4 +55,4 @@ spawn:
   teleport-others-msg-player: "&aYou have teleported &c%target_name% &ato spawn"
 
 #Don't change this
-version: 1.4
+version: 1.6

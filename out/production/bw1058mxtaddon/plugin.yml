@@ -64,3 +64,6 @@ commands:
   afk:
     description: Set someone or yourself to afk mode
     usage: /<command> [playername]
+  msg:
+    description: Send private message to a player
+    usage: /<command> [playername] [message]
