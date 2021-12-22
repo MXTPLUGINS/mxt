@@ -10,6 +10,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
 import static me.mxt.mxtplugin.Main.ver;
+import static me.mxt.mxtplugin.commands.VanishCommand.vanish_players;
 
 public class JoinEvent implements Listener {
 
@@ -35,6 +36,10 @@ public class JoinEvent implements Listener {
 
             } else {
                 player.sendMessage("");
+            }
+
+            for (Player p : vanish_players){
+                e.getPlayer().hidePlayer(p);
             }
 
 

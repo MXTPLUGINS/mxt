@@ -4,8 +4,9 @@
 MXT is a plugin that provide lot of features and updates!, Gamemodes, heal, night, day and more!
 
 ## What's new?
-1. Added /flylist command
-2. Fixed spamming error on console when the player is not found, and added "Player is not found" error
+1. Fixed a bug on /spawn command
+2. Added /vanish command
+3. Added /invsee command
 
 ### Currently supporting Minecraft java 1.8+ 
 Not all versions are tested yet!
@@ -23,8 +24,9 @@ Not all versions are tested yet!
 - [Spgiot](https://www.spigotmc.org/resources/mxt.98417/)
 
 ## Future Updates/Fixes
-- Adding moderation commands
-- Fix /spawn command
+- Add moderation commands
+- Improve the plugin code
+- Fix /spawn command (FIXED)
 
 ## Soft Dependencys:
 - [ActionBarAPI](https://www.spigotmc.org/resources/actionbarapi-1-8-1-14-2.1315/)

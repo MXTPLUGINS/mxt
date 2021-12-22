@@ -67,3 +67,9 @@ commands:
   msg:
     description: Send private message to a player
     usage: /<command> [playername] [message]
+  invsee:
+    description: See/edit someone's inventory
+    usage: /<command> [playername]
+  vanish:
+    description: Toggle vanish
+    usage: /<command>

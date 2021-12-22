@@ -55,4 +55,4 @@ spawn:
   teleport-others-msg-player: "&aYou have teleported &c%target_name% &ato spawn"
 
 #Don't change this
-version: 1.6
+version: 1.7

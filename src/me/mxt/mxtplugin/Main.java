@@ -13,7 +13,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class Main extends JavaPlugin{
 
     public static LocationManagerSpawn lms;
-    public static Double ver = 1.6;
+    public static Double ver = 1.7;
 
     @Override
     public void onEnable() {
@@ -51,6 +51,8 @@ public class Main extends JavaPlugin{
         getCommand("afk").setExecutor(new AfkCommand());
         getServer().getPluginManager().registerEvents(new onPlayerMove(), this);
         getCommand("msg").setExecutor(new MsgCommand());
+        getCommand("invsee").setExecutor(new InvseeCommand());
+        getCommand("vanish").setExecutor(new VanishCommand());
 
 
         PluginManager pluginManager = Bukkit.getPluginManager();
