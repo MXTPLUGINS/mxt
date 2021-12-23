@@ -4,9 +4,10 @@
 MXT is a plugin that provide lot of features and updates!, Gamemodes, heal, night, day and more!
 
 ## What's new?
-1. Fixed a bug on /spawn command
-2. Added /vanish command
-3. Added /invsee command
+1. Added bStats
+2. Fixed /gmsp command
+3. Added new version support
+4. Fixed unsupported api version error
 
 ### Currently supporting Minecraft java 1.8+ 
 Not all versions are tested yet!
@@ -31,3 +32,4 @@ Not all versions are tested yet!
 ## Soft Dependencys:
 - [ActionBarAPI](https://www.spigotmc.org/resources/actionbarapi-1-8-1-14-2.1315/)
 - [TitleAPI](https://www.spigotmc.org/resources/titleapi-1-8-1-17.1325/)
+- [bStats](https://bstats.org/plugin/bukkit/mxt/13682)

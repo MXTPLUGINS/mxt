@@ -1,8 +1,7 @@
 name: mxt
-version: 1.0
+version: 1.8
 author: MXT
 main: me.mxt.mxtplugin.Main
-api-version: 1.8
 softdepend: [ActionBarAPI, TitleAPI]
 commands:
   mxt:

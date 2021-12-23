@@ -13,7 +13,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class Main extends JavaPlugin{
 
     public static LocationManagerSpawn lms;
-    public static Double ver = 1.7;
+    public static Double ver = 1.8 ;
 
     @Override
     public void onEnable() {
@@ -53,6 +53,7 @@ public class Main extends JavaPlugin{
         getCommand("msg").setExecutor(new MsgCommand());
         getCommand("invsee").setExecutor(new InvseeCommand());
         getCommand("vanish").setExecutor(new VanishCommand());
+        Metrics metrics = new Metrics(this,  13682);
 
 
         PluginManager pluginManager = Bukkit.getPluginManager();
