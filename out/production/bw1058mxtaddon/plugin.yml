@@ -72,3 +72,6 @@ commands:
   vanish:
     description: Toggle vanish
     usage: /<command>
+  map:
+    description: See the map you are on
+    usage: /<command>
