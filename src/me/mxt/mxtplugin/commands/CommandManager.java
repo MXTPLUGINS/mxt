@@ -57,8 +57,7 @@ public class CommandManager implements CommandExecutor {
                     } else {
                             p.sendMessage(ChatColor.translateAlternateColorCodes ('&', CustomConfig.get().getString("no-permission")));
                     }
-
-            }
+                }
 
         } else if(!(sender instanceof Player)){
                 System.out.println(ChatColor.GREEN + "-------------------------------------");

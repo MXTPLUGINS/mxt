@@ -45,5 +45,8 @@
     </orderEntry>
     <orderEntry type="library" name="ActionBarAPI" level="project" />
     <orderEntry type="library" name="TitleAPI" level="project" />
+    <orderEntry type="library" name="spigot-api-1.8.8-R0.1-20160205.005117-39" level="project" />
+    <orderEntry type="library" name="TitleAPI-1.8.1" level="project" />
+    <orderEntry type="library" name="ActionBarAPI-1.5.4" level="project" />
   </component>
 </module>

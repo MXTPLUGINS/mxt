@@ -54,7 +54,7 @@ public class Main extends JavaPlugin{
         getCommand("invsee").setExecutor(new InvseeCommand());
         getCommand("vanish").setExecutor(new VanishCommand());
         Metrics metrics = new Metrics(this,  13682);
-
+        getCommand("map").setExecutor(new MapCommand());
 
         PluginManager pluginManager = Bukkit.getPluginManager();
 
