@@ -4,9 +4,7 @@
 MXT is a plugin that provide lot of features and updates!, Gamemodes, heal, night, day and more!
 
 ## What's new?
-1. Added no permission error message to /msg command
-2. Added /map command
-3. Added "Console can't execute this command" error to AFK command
+1. Added /flyspeed command
 
 ### Currently supporting Minecraft java 1.8+ 
 Not all versions are tested yet!

@@ -1,5 +1,5 @@
 name: mxt
-version: 1.8
+version: 1.10
 author: MXT
 main: me.mxt.mxtplugin.Main
 softdepend: [ActionBarAPI, TitleAPI]
@@ -74,4 +74,7 @@ commands:
     usage: /<command>
   map:
     description: See the map you are on
+    usage: /<command>
+  flyspeed:
+    description: Set your flyspeed
     usage: /<command>

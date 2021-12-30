@@ -10,17 +10,19 @@ import org.bukkit.entity.Player;
 public class PingCommand implements CommandExecutor {
 
     @Override
-    public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 
-        if(sender instanceof Player){
+        if (sender instanceof Player){
             Player player = (Player) sender;
+
             if (player.hasPermission("mxt.ping") || player.hasPermission("mxt.*")){
-                player.sendMessage(ChatColor.GREEN + "Pong!");
+                player.sendMessage("Pong!");
             } else {
                 player.sendMessage(ChatColor.translateAlternateColorCodes('&', CustomConfig.get().getString("no-permission")));
             }
-        } else if (!(sender instanceof Player)){
-            System.out.println("Pong!");
+
+        } else {
+            sender.sendMessage("Pong!");
         }
 
         return true;
