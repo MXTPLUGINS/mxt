@@ -49,9 +49,9 @@ public class CleanCommand implements CommandExecutor {
                     Player target = Bukkit.getPlayer(args[0]);
                     target.getInventory().clear();
                     target.sendMessage(ChatColor.translateAlternateColorCodes('&', CustomConfig.get().getString("clean.message-target").replaceAll("%player_name%", ChatColor.RED + "CONSOLE")));
-                    System.out.println("You have cleared " + target.getName() + " inventory");
+                    sender.sendMessage(ChatColor.translateAlternateColorCodes('&', CustomConfig.get().getString("clean.message-player").replaceAll("%target_name%", target.getName())));
                 } else {
-                    System.out.println("That player is not online!");
+                    sender.sendMessage(ChatColor.RED + "That player is not online");
                 }
 
             }

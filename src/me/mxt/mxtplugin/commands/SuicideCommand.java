@@ -32,7 +32,7 @@ public class SuicideCommand implements CommandExecutor {
             }
 
         } else if(!(sender instanceof Player)){
-            System.out.println("Console can't execute this command!");
+            sender.sendMessage(ChatColor.RED + "Console can't execute this command!");
         }
 
         return true;

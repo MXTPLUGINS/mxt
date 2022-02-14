@@ -32,6 +32,8 @@ public class AfkCommand implements CommandExecutor {
 
 
 
+        } else {
+            sender.sendMessage(ChatColor.RED + "ERROR: Console can't execute this command");
         }
 
 

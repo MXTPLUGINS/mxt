@@ -66,18 +66,18 @@ public class HealCommand implements CommandExecutor {
                 if (getServer().getPlayer(args[0]) != null) {
                     Player target = Bukkit.getPlayer(args[0]);
                     if (target.isDead()){
-                        System.out.println("You cannot heal players that are dead");
+                        sender.sendMessage(ChatColor.RED + "You cannot heal players that are dead");
                     } else {
                         target.setHealth(20);
                         target.setFoodLevel(20);
                         target.removePotionEffect(PotionEffectType.HUNGER);
                         target.setFireTicks(0);
                         target.sendMessage(ChatColor.GREEN + "You Have been healed by " + ChatColor.RED + "CONSOLE");
-                        System.out.println("You have healed " + target.getPlayer());
+                        sender.sendMessage(ChatColor.GREEN + "You have healed " + ChatColor.RED + target.getName());
                     }
 
                 } else {
-                    System.out.println("That player is not online!");
+                    sender.sendMessage(ChatColor.RED + "That player is not online!");
                 }
 
             }

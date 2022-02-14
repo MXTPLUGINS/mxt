@@ -50,9 +50,9 @@ public class SpawnCommand implements CommandExecutor {
                     Player target = Bukkit.getPlayer(args[0]);
                     target.teleport(Main.lms.getSpawn());
                     target.sendMessage("You have been teleported to spawn by " + ChatColor.RED + "CONSOLE");
-                    System.out.println(ChatColor.GREEN + "You have teleported " + target.getName() + " to spawn!");
+                    sender.sendMessage(ChatColor.GREEN + "You have teleported " + target.getName() + " to spawn!");
                 } else {
-                    System.out.println("That player is not online!");
+                    sender.sendMessage(ChatColor.RED + "That player is not online!");
                 }
 
             }

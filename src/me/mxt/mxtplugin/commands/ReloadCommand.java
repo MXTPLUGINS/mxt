@@ -16,28 +16,15 @@ public class ReloadCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 
-
-        if (sender instanceof Player) {
-            Player player = (Player) sender;
-            if (player.hasPermission("mxt.reload") || player.hasPermission("mxt.*")) {
+            if (sender.hasPermission("mxt.reload") || sender.hasPermission("mxt.*")) {
                 CustomConfig.reload();
-                player.sendMessage(ChatColor.GREEN + "Config Reloaded! Check console to see if there is any error");
+                sender.sendMessage(ChatColor.GREEN + "Config Reloaded! Check console to see if there is any error");
                 if (!(CustomConfig.get().getDouble("version") == ver)){
-                    player.sendMessage(ChatColor.RED + "Your config.yml is not up to date, delete the config and let it make it self or set your config version to " + ver + " to stop this warning");
+                    sender.sendMessage(ChatColor.RED + "Your config.yml is not up to date, delete the config and let it make it self or set your config version to " + ver + " to stop this warning");
                 }
             } else {
-                player.sendMessage(ChatColor.translateAlternateColorCodes ('&', CustomConfig.get().getString("no-permission")));
+                sender.sendMessage(ChatColor.translateAlternateColorCodes ('&', CustomConfig.get().getString("no-permission")));
             }
-
-        }else if(!(sender instanceof Player)){
-            CustomConfig.reload();
-            System.out.println("Config Reloaded! Check console to see if there is any error");
-             if (!(CustomConfig.get().getDouble("version") == ver)){
-                Bukkit.getLogger().warning("[MXT] Your config.yml is not up to date, delete the config and let it make it self or set your config version to " + ver + " to stop this warning");
-            }
-        }
-
-
 
         return true;
     }
